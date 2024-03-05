@@ -1,3 +1,17 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'tf2build';
+  src: url('tf2build.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'tf2secondary';
+    src: url('tf2secondary-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-image: url('testimage.png');
     background-size: 100% auto;
@@ -5,7 +19,9 @@ body{
     background-repeat: no-repeat;
     /* overflow: hidden; */
     /* position: relative; */
+    font-family: tf2build;
 }
+
 
 body::before {
     content: '';
@@ -13,25 +29,55 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 270vh;
+    height: 300vh;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0 to 1) */
     z-index: -1;
     /* overflow: hidden; */
   }
 
-h1 {
+.btn {
+  margin-top: 10px;
+  margin-right: 10px; 
+  color: #fff; /* Text color */
+  box-shadow: 
+  /* 0 0 5px #fff,  */
+  /* 0 0 10px #fff,  */
+  0 0 5px #fff;
+}
+
+h1, h4, h6 {
     text-align: center;
     font-size: 600%;
     padding-top: 25%;
     color: #fff; /* Text color */
-  text-shadow: 
+    text-shadow: 
     /* 0 0 5px #fff,  */
     /* 0 0 10px #fff,  */
     0 0 15px #fff; 
-    
+    padding-bottom: 0%;
+    margin-bottom: 1%;
 }
+
+h4 {
+  font-size: 200%;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+h6 {
+  font-size: 100%;
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+body h2 {
+  margin-top: 15px;
+}
+
 .amongus{
     z-index: 999;
+    text-align: right;
 }
 
 .blurbs {
@@ -54,15 +100,6 @@ h1 {
     background-color: #fffdf7;
 }
 
-  /* .text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .show {
-    opacity: 1;
-  } */
+p {
+  font-family: tf2secondary;
+}
