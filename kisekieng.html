@@ -6,6 +6,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
     <link rel="stylesheet" type="text/css" href="kiseki.css">
     <title>キセキ遺品</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script>
+	  $(document).ready(function(){
+		$('[data-fancybox="gallery"]').fancybox({
+		type: "image",
+		  loop: true,  // set the slideshow to loop continuously
+		  arrows: true,  // show navigation arrows
+		  buttons: [
+			"zoom",
+			"slideShow",
+			"fullScreen",
+			"close"
+		  ]  // show additional buttons for zooming, slideshow, fullscreen, and closing
+		});
+	  });
+
+</script>
 </head>
 <body>
     <div class="amongus">
@@ -74,6 +95,9 @@ donated scores of items to museums.</p>
     <div id="container" style="margin-top: 4rem">
         <div class="blurbs" id="history">
             <h2>Artifacts Looking for a Home</h2>
+            <a data-fancybox="sussywussy" href="キセキが調査中の遺留品2.pdf">
+                <img style="width: 90%; padding-bottom: 20px" src="goraikouflag.JPG" alt="Slide 1">
+            </a>
         </div>
         </div>
 
